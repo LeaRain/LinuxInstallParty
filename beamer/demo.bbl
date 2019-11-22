@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{article}
+P.~Adams.
+\newblock The title of the work.
+\newblock {\em The name of the journal}, 4(2):201--213, 7 1993.
+\newblock An optional note.
+
+\bibitem{book}
+P.~Babington.
+\newblock {\em The title of the work}, volume~4 of {\em 10}.
+\newblock The name of the publisher, The address, 3 edition, 7 1993.
+\newblock An optional note.
+
+\bibitem{inbook}
+P.~Eston.
+\newblock {\em The title of the work}, volume~4 of {\em 5}, chapter~8, pages
+  201--213.
+\newblock The name of the publisher, The address of the publisher, 3 edition, 7
+  1993.
+\newblock An optional note.
+
+\end{thebibliography}

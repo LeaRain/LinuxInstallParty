@@ -1,0 +1,159 @@
+\documentclass[9pt]{beamer}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Use roboto Font (recommended)
+\usepackage[sfdefault]{roboto}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx} 
+\usepackage{hyperref}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Define where theme files are located. ('/styles')
+\usepackage{styles/fluxmacros}
+\usefolder{styles}
+% Use Flux theme v0.1 beta
+% Available style: asphalt, blue, red, green, gray 
+\usetheme[style=Asphaltf]{flux}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Extra packages for the demo:
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{ragged2e}
+\usepackage{schemabloc}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Informations
+\title{Linux Install Party}
+\subtitle{\#AdoptYourOwnPenguin}
+\author{Lea Laux}
+\institute{Fachschaft Informatik Mathematik}
+\date{4. Dezember 2019}
+\titlegraphic{assets/tux.png}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{document}
+
+% Generate title page
+\titlepage
+
+\begin{frame}
+ \frametitle{Inhalt}
+ \tableofcontents
+\end{frame}
+
+\section{Einführung}
+\subsection{Linux} 
+\begin{frame}
+ \frametitle{Linux?}
+ \framesubtitle{Was ist das?}
+	\begin{Large}
+		\begin{itemize}
+			\item Betriebssysteme basierend auf Linux-Kernel
+	 		\item (Meist) quelloffene Systeme
+	 		\item Vielseitig einsetzbar: Desktop, Server, Smartphones, Fernseher, Tablets, IoT-Geräte, ...
+	 		\item Vorteile: Offene, kostenlose Systeme unter eigener Kontrolle, vielseitige Gestaltungsmöglichkeiten, ...
+ 		\end{itemize}
+	\end{Large}
+\end{frame}
+
+\subsection{Distributionen}
+\begin{frame}
+	\frametitle{Ist das System relevant?}
+	\framesubtitle{Verschiedene Distributionen}
+	\begin{columns}
+    \begin{column}[c]{0.6\textwidth}
+
+	\begin{itemize}
+		\item Vielzahl an Distributionen verfügbar
+		\item Hier:
+			\begin{itemize}
+				\item Debian
+				\item Manjaro
+				\item Linux Lite
+			\end{itemize}
+		\item Beliebteste Distributionen: DistroWatch
+		\item Welche Distribution passt zu mir? $\rightarrow$ DistroChooser
+	\end{itemize}
+	\end{column}
+		\begin{column}[c]{0.4\textwidth}
+	 \includegraphics[width=1.0\textwidth]{assets/distro.png}
+	 Linux Lite Logo: CC BY-SA 4.0, modified, Jerry Bezencon (Creator of Linux Lite), \href{https://commons.wikimedia.org/wiki/File:Linux_Lite_Simple_Fast_Free_logo.png}{source}, License $\rightarrow$ end
+    \end{column}
+	\end{columns}
+\end{frame}
+
+\section{Systemrelevanz}
+\subsection{Debian}
+\begin{frame}
+\frametitle{Debian}
+\begin{columns}
+    \begin{column}[c]{0.6\textwidth}
+
+	\begin{itemize}
+		\item Weit verbreitete Distribution, vor allem durch Derivate (über 480)
+		\item Ins Leben gerufen: 1993
+		\item Aktuell über 57000 verfügbare Programmpakete
+		\item Etwa alle zwei Jahre neue Version (stable)
+		\item Aktuelle Version: Debian 10 Buster
+		\item oldoldstable -- oldstable -- \textbf{stable} -- testing -- unstable -- experimental
+		\item Abgeschlossene Versionen mit möglichst wenig Updates
+		\item Paketmanager: apt
+	\end{itemize}
+	\end{column}
+	
+	\begin{column}{0.4\textwidth}
+    \includegraphics[width=1.0\textwidth]{assets/debian.png} 
+	\end{column}
+
+ \end{columns}
+
+\end{frame}
+
+
+\subsection{Manjaro}
+\begin{frame}
+ \frametitle{Manjaro}
+ \begin{columns} 
+    \begin{column}[c]{0.6\textwidth}
+
+	\begin{itemize}
+		\item Arch Linux-Derviat mit einem Fokus auf Benutzungsfreundlichkeit
+		\item Ins Leben gerufen: 2011
+		\item Rolling-Release-Modell
+		\item \textbf{stable} -- testing -- unstable
+		\item Durch Rolling Release oft Neuerungen und Zugriff auf aktuelle Software
+		\item Zugriff auf Arch User Repository möglich
+		\item Paketmanager: pacman (AUR helper/Pacman Wrapper yay)
+	\end{itemize}
+	\end{column}
+	
+	\begin{column}{0.4\textwidth}
+    \includegraphics[width=1.0\textwidth]{assets/manjaro.png}
+    \includegraphics[width=1.0\textwidth]{assets/arch.png} 
+	\end{column}
+
+ \end{columns}
+\end{frame}
+
+
+\begin{frame}
+ \centering
+ \frametitle{Theme License}
+ \framesubtitle{Flux}
+ 	\justifying
+ Flux is a modern style beamer presentation. It is provided as a work in progress version and may suffer from inconsistencies. Sources and complementary information are available at\\[0.3cm]
+ 	\centering\textbf{github.com/pvanberg/flux-beamer}\\
+ Flux is licensed under GNU General Public License v3.\\[0.3cm]
+ 	\centering\textbf{http://www.gnu.org/licenses}\\[0.3cm]
+Inspired by \textbf{Metropolis} theme from Matthias Vogelgesang.\\
+https://github.com/matze/mtheme 
+ 
+\end{frame}
+
+\end{document}
