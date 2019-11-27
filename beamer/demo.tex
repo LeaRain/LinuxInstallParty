@@ -173,6 +173,7 @@
  \framesubtitle{Es geht ums Aussehen!}
  \begin{Large}
  \begin{itemize}
+  \item \textbf{Verschiedene Umgebungen live vorführen}
   \item Verschiedenste Desktop-Umgebungen: KDE, XFCE, Gnome, Awesome, Cinnamon, MATE, ...
   \item Micro Management mit verschiedenen Themes, Optionen der verschiedenen Umgebungen, etc.
   \item Debian: Grundsätzlich keine Beschränkungen, gewisse Auswahl während (und nach) Installation, ausführlichere Liste: \href{https://wiki.debian.org/DesktopEnvironment}{https://wiki.debian.org/DesktopEnvironment}
@@ -182,6 +183,53 @@
  \end{Large}
 \end{frame}
 
+\subsection{Installation und Updates von Software}
+
+\begin{frame}
+ \frametitle{Software?}
+ \framesubtitle{Gestalten und Verwalten}
+ \begin{Large}
+ \begin{itemize}
+  \item \textbf{Pacman und Pamac live vorführen}
+  \item Graphische Tools und Paketmanager auf der Kommandozeile
+  \item Kommandozeilentools/Paketmanager apt und pacman als Basis
+ \end{itemize}
+  \end{Large}
+\end{frame}
+
+\begin{frame}
+ \frametitle{apt-get}
+ \framesubtitle{Debian und Derivate}
+ Für viele Befehle sudo notwendig
+ \begin{itemize}
+  \item Updates holen und installieren: \texttt{apt-get update \&\& apt-get upgrade}
+  \item Paketinstallation: \texttt{apt-get install <paket>}\texttt{apt-get remove <paket>}
+  \item Paketentfernung: \texttt{apt-get remove <paket>}
+  \item Paketsuche:  \texttt{apt search <paket>}
+ \end{itemize}
+ Generell: manpage für apt lesen mit \texttt{man apt}
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{pacman}
+ \framesubtitle{Arch und Derivate}
+  Für viele Befehle sudo notwendig
+ \begin{itemize}
+  \item Updates: \texttt{pacman -Syu} oder \texttt{pacman -Syyu}
+  \item Paketinstallation: \texttt{pacman -S <paket>}
+  \item Paketentfernung: \texttt{pacman -R <paket>} oder \texttt{pacman -Rs <paket>}
+  \item Paketsuche: \texttt{pacman -Ss <paket>}
+ \end{itemize}
+ Generell: manpage für pacman lesen mit \texttt{man pacman}
+\end{frame}
+
+\subsection{Troubleshooting}
+\begin{frame}
+ \frametitle{Troubleshooting}
+ \framesubtitle{Hilfe, mein System ist kaputt/komisch!}
+
+\end{frame}
 
 \begin{frame}
  \centering
